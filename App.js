@@ -50,11 +50,11 @@ const OnBoardingNavigator = () => {
 const RootStack = createStackNavigator();
 
 function App() {
-  const [hasCompletedIntro, setHasCompletedIntro] = React.useState(true);
+  const [hasCompletedIntro, setHasCompletedIntro] = React.useState(false);
   // const [hasSelectedLanguage, setHasSelectedLanguage] = React.useState(false);
   return (
     <NavigationContainer>
-      <RootStack.Navigator>
+      <RootStack.Navigator headerMode={"none"}>
         {hasCompletedIntro ? (
           <RootStack.Screen name="Home" component={AppTabsNavigator} />
         ) : (
