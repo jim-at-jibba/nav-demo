@@ -10,7 +10,7 @@ import {
 
 const AppTabs = createBottomTabNavigator();
 
-const AppTabsScreen = () => {
+const AppTabsNavigator = () => {
   return (
     <AppTabs.Navigator
       AppTabsBarOptions={{
