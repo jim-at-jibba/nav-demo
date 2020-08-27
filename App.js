@@ -6,6 +6,8 @@ import {
   WelcomeScreen,
   ChooseYourLanguageScreen,
   HowToUseThisAppScreen,
+  HomeScreen,
+  AppMenuScreen,
 } from "./screens";
 
 const AppTabs = createBottomTabNavigator();
@@ -48,7 +50,7 @@ const OnBoardingNavigator = () => {
 const RootStack = createStackNavigator();
 
 function App() {
-  const [hasCompletedIntro, setHasCompletedIntro] = React.useState(false);
+  const [hasCompletedIntro, setHasCompletedIntro] = React.useState(true);
   // const [hasSelectedLanguage, setHasSelectedLanguage] = React.useState(false);
   return (
     <NavigationContainer>

@@ -1,6 +1,22 @@
 import React from "react";
 import { View, Text } from "react-native";
 
+export function AppMenuScreen() {
+  return (
+    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+      <Text>AppMenuScreen Screen</Text>
+    </View>
+  );
+}
+
+export function HomeScreen() {
+  return (
+    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+      <Text>Home Screen</Text>
+    </View>
+  );
+}
+
 export function WelcomeScreen() {
   return (
     <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
